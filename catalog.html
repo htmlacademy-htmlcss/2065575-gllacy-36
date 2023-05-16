@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="">
+      <nav>
+        <UL>
+          <li>
+            <a href="#">
+              <img src="" height="" width="" alt="Логотип">
+            </a>
+          </li>
+          <li>
+            <p>Каталог</p>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="tel:+78005558628">Тел.: +7 (800) 555-86-28</a>
+          </li>
+          <li>
+            <button type="submit">Вход</button>
+          </li>
+          <li>
+            <p>2 товара</p>
+          </li>
+        </UL>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Страница Каталог товара</h1>
+      <div>
+        <ul>
+          <li>
+            <a href="">Главная</a>
+          </li>
+          <li>
+            <a href="">Каталог</a>
+          </li>
+          <li>
+            <a href="">Сливочное мороженое</a>
+          </li>
+        </ul>
+        <h2>Сливочное мороженое</h2>
+      </div>
+      <section>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
+          <select class="select-catalog" aria-label="Сортировка">
+            <option value="cheap">по популярности</option>
+            <option value="popular"></option>
+            <option value="exspensive"></option>
+          </select>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+            <div class="range">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="text" name="min">
+                </label>
+                <label class="catalog-filter-label-max">
+                  <input class="range-input-right" type="text" name="max">
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="filter-container-right">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Жирность:</legend>
+              <ul class="catalog-filter-list">
+                <li>
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label-radio">0%</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products" checked>
+                    <span class="control-label-radio">до 10% </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products">
+                    <span class="control-label-radio">до 30% </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products">
+                    <span class="control-label-radio">выше 30% </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-container">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Наполнители:</legend>
+              <ul class="catalog-filter-list">
+                <li>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Swimming pool" checked>
+                    <span class="control-label">шоколадные</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Parking space" checked>
+                    <span class="control-label">сахарные посыпки</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-label">фрукты</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-label">сиропы</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-label">джемы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button class="button-apply" type="submit">Применить</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товара</h2>
+        <ul>
+          <li>
+            <img src="" width="" height="" alt="Мороженный Малиновое">
+            <h3></h3>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3>Малинка</h3>
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <p>310 ₽/кг</p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный Фисташковое">
+            <h3>Фисташка</h3>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <p>340 ₽/кг</p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный Черничное">
+            <h3>Черника</h3>
+            <p>Крем-брюле с черничным джемом</p>
+            <p></p>
+            <span>330 ₽/кг</span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный со вкусом живачки">
+            <h3>Бабл-гам</h3>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <p>320 ₽/кг</p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+          <li>
+            <img src="" width="" height="" alt="Мороженный рожок">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <span></span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="">
+            <img src="" width="" height="" alt="Телеграмм">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="" width="" height="" alt="Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="" width="" height="" alt="Ютуб">
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="">Наши документы</a>
+        </li>
+        <li>
+          <a href="">О производстве</a>
+        </li>
+        <li>
+          <a href="">Экологические стандарты</a>
+        </li>
+      </ul>
+      <a href="">
+        <img src="" width="" height="" alt="Лого">
+      </a>
+      <p>Сделано в .html academy © 2021</p>
+    </footer>
+  </body>
+</html>
