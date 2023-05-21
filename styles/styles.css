@@ -82,6 +82,10 @@ body {
   margin-bottom: 80px;
 }
 
+.slaider_container {
+  display: flex;
+}
+
 .slaider_text_list {
   width: 429px;
   margin: 0;
@@ -106,17 +110,19 @@ body {
   gap: 30px;
 }
 
-.banner_container_list {
+.banner_container_left,
+.banner_container_right {
+  display: flex;
   width: 570px;
-  min-height: 268px;
-  margin: 0;
-  padding: 0;
+  min-height: 267px;
   background-color: #FF7799;
-  list-style: none;
 }
 
-.slaider_container {
-  display: flex;
+.banner_list {
+  width: 317px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .guevara {
@@ -158,9 +164,31 @@ body {
 
 .news_containe {
   display: flex;
+  gap: 30px;
 }
 
 .news_container_text {
   width: 570px;
   min-height: 224px;
+  background-image: url("../images/jpg/Новости.png");
+  background-repeat: no-repeat;
+}
+
+.news_containe_form {
+  position: relative;
+  width: 570px;
+  min-height: 224px;
+  margin-bottom: 80px;
+  background-image: url("../images/jpg/Подписка.png");
+  background-repeat: no-repeat;
+}
+
+.news_form {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  bottom: 6px;
+  left: 6px;
+  z-index: 1;
+  background-color: #FFFFFF;
 }
