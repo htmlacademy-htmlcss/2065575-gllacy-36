@@ -33,23 +33,23 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page_main">
       <h1 class="visually-hidden">Страница Каталог товара</h1>
       <div class="breadcrumbs_container">
         <ul class="breadcrumbs_list">
           <li>
-            <a href="">Главная</a>
+            <a class="breadcrumbs_link" href="">Главная</a>
           </li>
           <li>
-            <a href="">Каталог</a>
+            <a class="breadcrumbs_link" href="">Каталог</a>
           </li>
           <li>
-            <a href="">Сливочное мороженое</a>
+            <a class="breadcrumbs_link" href="">Сливочное мороженое</a>
           </li>
         </ul>
         <h2>Сливочное мороженое</h2>
       </div>
-      <section>
+      <section class="catalog_forma">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
           <select class="select-catalog" aria-label="Сортировка">
             <option value="cheap">по популярности</option>
@@ -58,215 +58,162 @@
           </select>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-            <div class="range">
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label">
-                  <input class="range-input" type="text" name="min">
-                </label>
-                <label class="catalog-filter-label-max">
-                  <input class="range-input-right" type="text" name="max">
-                </label>
-              </div>
-              <div class="range-scale">
-                <div class="range-bar" style="left: 0; width: 226px">
-                  <button class="range-toggle toggle-min">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle toggle-max">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
-              </div>
-            </div>
+            <label class="catalog-filter-label">
+              <input class="range-input" type="text" name="min">
+              <input class="range-input-right" type="text" name="max">
+            </label>
+            <button class="range-toggle toggle-min">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
           </fieldset>
-          <div class="filter-container-right">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Жирность:</legend>
-              <ul class="catalog-filter-list">
-                <li>
-                  <label class="control-radio">
-                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products">
-                    <span class="control-mark-radio"></span>
-                    <span class="control-label-radio">0%</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control-radio">
-                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products" checked>
-                    <span class="control-label-radio">до 10% </span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control-radio">
-                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products">
-                    <span class="control-label-radio">до 30% </span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control-radio">
-                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="care-products">
-                    <span class="control-label-radio">выше 30% </span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="filter-container">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Наполнители:</legend>
-              <ul class="catalog-filter-list">
-                <li>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Swimming pool" checked>
-                    <span class="control-label">шоколадные</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Parking space" checked>
-                    <span class="control-label">сахарные посыпки</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
-                    <span class="control-label">фрукты</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
-                    <span class="control-label">сиропы</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
-                    <span class="control-label">джемы</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <label class="control-radio">
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products">
+              <span class="control-label-radio">0%</span>
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products" checked>
+              <span class="control-label-radio">до 10% </span>
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products">
+              <span class="control-label-radio">до 30% </span>
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products">
+              <span class="control-label-radio">выше 30% </span>
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Наполнители:</legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Swimming pool" checked>
+              <span class="control-label">шоколадные</span>
+              <input class="control-input" type="checkbox" name="Parking space" checked>
+              <span class="control-label">сахарные посыпки</span>
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <span class="control-label">фрукты</span>
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <span class="control-label">сиропы</span>
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <span class="control-label">джемы</span>
+            </label>
+          </fieldset>
           <button class="button-apply" type="submit">Применить</button>
         </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товара</h2>
-        <ul>
-          <li>
-            <img src="" width="" height="" alt="Мороженный Малиновое">
-            <h3></h3>
-          </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный рожок">
+        <ul class="catalog_list">
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото.png" width="168" height="168" alt="Мороженный рожок">
             <h3>Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
             <p>310 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный Фисташковое">
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото_1.png" width="168" height="168" alt="Мороженный Фисташковое">
             <h3>Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <p>340 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный Черничное">
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото_2.png" width="168" height="168" alt="Мороженный Черничное">
             <h3>Черника</h3>
             <p>Крем-брюле с черничным джемом</p>
             <p></p>
             <span>330 ₽/кг</span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный со вкусом живачки">
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото_3.png" width="168" height="168" alt="Мороженный со вкусом живачки">
             <h3>Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <p>320 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный Ежевика">
+          <li class="catalog_itam">
+            <img src="images/jpg/ежевика.png" width="168" height="168" alt="Мороженный Ежевика">
             <h3>Ежевика</h3>
             <p>Сливочное мороженое с ежевичным джемом</p>
             <p>330 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный банановое">
+          <li class="catalog_itam">
+            <img src="images/jpg/банан.png" width="168" height="168" alt="Мороженный банановое">
             <h3>Банан</h3>
             <p>Сливочный пломбир с банановым вкусом</p>
             <p>340 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный шеколадное">
+          <li class="catalog_itam">
+            <img src="images/jpg/шоколадку.png" width="168" height="168" alt="Мороженный шеколадное">
             <h3>Шоколадка</h3>
             <p>Классический шоколадный пломбир</p>
             <p>270 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный клубничное">
+          <li class="catalog_itam">
+            <img src="images/jpg/клубничка.png" width="168" height="168" alt="Мороженный клубничное">
             <h3>Клубничка</h3>
             <p>Сливочный пломбир с клубничным вкусом</p>
             <p>300 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный лимонное">
+          <li class="catalog_itam">
+            <img src="images/jpg/лимон.png" width="168" height="168" alt="Мороженный лимонное">
             <h3>Лимон</h3>
             <p>Освежающий лимонный сорбет</p>
             <p>310 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный ментоловое">
+          <li class="catalog_itam">
+            <img src="images/jpg/ментол.png" width="168" height="168" alt="Мороженный ментоловое">
             <h3>Ментол</h3>
             <p>Сливочный пломбир с ментоловым сиропом</p>
             <p>320 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный орешковое">
+          <li class="catalog_itam">
+            <img src="images/jpg/орешек.png" width="168" height="168" alt="Мороженный орешковое">
             <h3>Орешек</h3>
             <p>Фисташковый пломбир с шоколадным сиропом</p>
             <p>360 ₽/кг</p>
             <span></span>
           </li>
-          <li>
-            <img src="" width="" height="" alt="Мороженный Крем-брюле">
+          <li class="catalog_itam">
+            <img src="images/jpg/Крем-брюле.png" width="168" height="168" alt="Мороженный Крем-брюле">
             <h3>Крем-брюле</h3>
             <p>Классическое крем-брюле </p>
             <p>280 ₽/кг</p>
             <span></span>
           </li>
         </ul>
-        <button type="button">Показать еще</button>
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-button-gray" href="#"><span></span></a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-button-gray" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-button-blue" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-button-blue" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-button-blue" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-button-white" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-button-gray" href="#"><span></span></a>
-          </li>
-        </ul>
+        <div class="pagination_container">
+          <button type="button">Показать еще</button>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-button-gray" href="#"><span></span></a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-gray" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-blue" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-blue" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-blue" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-white" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-gray" href="#"><span></span></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page_footer">
