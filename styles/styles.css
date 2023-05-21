@@ -192,3 +192,66 @@ body {
   z-index: 1;
   background-color: #FFFFFF;
 }
+
+.delivery_container {
+  position: relative;
+  width: 1170px;
+  min-height: 534px;
+  margin-bottom: 80px;
+  background-image: url("../images/jpg/Доставка.jpg");
+  background-repeat: no-repeat;
+}
+
+.delivery_container_form {
+  position: absolute;
+  width: 500px;
+  min-height: 406px;
+  top: 64px;
+  right: 64px;
+  bottom: 64px;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+
+.contacts_container {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.contacts {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  bottom: 64px;
+  width: 343px;
+  min-height: 364px;
+  background-color: #FCFCFC;
+}
+
+.page_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 356px;
+  min-height: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_text {
+  margin: 0;
+  padding: 0;
+}
+
