@@ -3,121 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="">
-      <nav>
-        <UL>
+    <header class="page_header">
+      <nav class="navigation">
+        <a class="logo_link" href="#">
+          <img src="images/svg/Лого.svg" height="56" width="137" alt="Логотип">
+        </a>
+        <ul class="navigation_list">
           <li>
-            <a href="#">
-              <img src="" height="" width="" alt="Логотип">
-            </a>
+            <a class="navigation-link" href="#">Каталог</a>
           </li>
           <li>
-            <p>Каталог</p>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="#">Доставка и оплата</a>
+            <a class="navigation-link" href="#">О компании</a>
           </li>
           <li>
-            <a href="#">О компании</a>
-          </li>
-          <li>
-            <a href="tel:+78005558628">Тел.: +7 (800) 555-86-28</a>
+            <a class="navigation-link" href="tel:+78005558628">Тел.: +7 (800) 555-86-28</a>
           </li>
           <li>
             <button type="submit">Вход</button>
           </li>
           <li>
-            <p>2 товара</p>
+            <button type="button">2 товара</button>
           </li>
-        </UL>
+        </ul>
       </nav>
     </header>
-    <main>
+    <main class="page_main">
       <h1 class="visually-hidden">Главная страница интернет магазина Глейси</h1>
       <section class="slaider">
-        <article>
-          <h2 class="visually-hidden">Слайдер с мороженным</h2>
-          <div>
-            <ul>
-              <li>
-                <h3>Нежный пломбир с клубничным джемом</h3>
-              </li>
-              <li>
-                <P>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</P>
-              </li>
-              <li>
-                <button type="submit">Заказать</button>
-              </li>
-            </ul>
-            <ul>
-              <li class="">
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-              <li>
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-              <li>
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article>
-          <h2 class="visually-hidden">Слайдер с мороженным</h2>
-          <div>
-            <ul>
-              <li>
-                <h3>Сливочное мороженое со вкусом банана</h3>
-              </li>
-              <li>
-                <P>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</P>
-              </li>
-              <li>
-                <button type="submit">Заказать</button>
-              </li>
-            </ul>
-            <ul>
-              <li class="">
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-              <li>
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-              <li>
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article>
-          <h2 class="visually-hidden">Слайдер с мороженным</h2>
-          <div>
-            <ul>
-              <li>
-                <h3>Карамельный пломбир с маршмеллоу</h3>
-              </li>
-              <li>
-                <P>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</P>
-              </li>
-              <li>
-                <button type="submit">Заказать</button>
-              </li>
-            </ul>
-            <ul>
-              <li class="">
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-              <li>
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-              <li>
-                <img src="" width="" height="" alt="Мороженный рожок">
-              </li>
-            </ul>
-          </div>
-        </article>
+        <h2 class="visually-hidden">Слайдер с мороженным</h2>
+        <div class="slaider_container">
+          <ul class="slaider_text_list">
+            <li>
+              <h3>Нежный пломбир с клубничным джемом</h3>
+            </li>
+            <li>
+              <P>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</P>
+            </li>
+            <li>
+              <button type="submit">Заказать</button>
+            </li>
+          </ul>
+          <ul class="slaider_list">
+            <li class="">
+              <img src="images/jpg/Мороженное_2.png" width="327" height="507" alt="Мороженный клубничный рожок">
+            </li>
+            <li>
+              <img src="images/jpg/Мороженко.png" width="66" height="150" alt="Мороженный банановый рожок">
+            </li>
+            <li>
+              <img src="images/jpg/Мороженко_1.png" width="66" height="150" alt="Мороженный карамельный рожок">
+            </li>
+          </ul>
+        </div>
+        <div class="slaider_container">
+          <ul class="slaider_text_list">
+            <li>
+              <h3>Нежный пломбир с клубничным джемом</h3>
+            </li>
+            <li>
+              <P>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</P>
+            </li>
+            <li>
+              <button type="submit">Заказать</button>
+            </li>
+          </ul>
+          <ul class="slaider_list">
+            <li class="">
+              <img src="images/jpg/Мороженко.png" width="327" height="507" alt="Мороженный банановый рожок">
+            </li>
+            <li>
+              <img src="images/jpg/Мороженко_1.png" width="66" height="150" alt="Мороженный карамельный рожок">
+            </li>
+            <li>
+              <img src="images/jpg/Мороженное_2.png" width="66" height="150" alt="Мороженный клубничный рожок">
+            </li>
+          </ul>
+        </div>
+        <div class="slaider_container">
+          <ul class="slaider_text_list">
+            <li>
+              <h3>Нежный пломбир с клубничным джемом</h3>
+            </li>
+            <li>
+              <P>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</P>
+            </li>
+            <li>
+              <button type="submit">Заказать</button>
+            </li>
+          </ul>
+          <ul class="slaider_list">
+            <li class="">
+              <img src="images/jpg/Мороженко_1.png" width="327" height="507" alt="Мороженный карамельный рожок">
+            </li>
+            <li>
+              <img src="images/jpg/Мороженное_2.png" width="66" height="150" alt="Мороженный клубничный рожок">
+            </li>
+            <li>
+              <img src="images/jpg/Мороженко.png" width="66" height="150" alt="Мороженный банановый рожок">
+            </li>
+          </ul>
+        </div>
       </section>
       <article>
         <h2 class="visually-hidden">Банеры</h2>
@@ -261,7 +252,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page_footer">
       <ul>
         <li>
           <a href="">

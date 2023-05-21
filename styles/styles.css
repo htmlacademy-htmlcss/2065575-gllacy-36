@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Inte";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inte";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inte";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  background: #F2F2F2;
+}
+
+body {
+  display: flex;
+  width:  1366px;
+  min-height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Inte", sans-serif;
+  color:  #2D3440;
+  background: #FEAFC3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page_header,
+.page_main,
+.page_footer {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navigation_list,
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.logo_link {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.slaider {
+  margin-bottom: 80px;
+}
+
+.slaider_text_list {
+  width: 429px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slaider_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.banner {
+  margin-bottom: 80px;
+}
+
+.banner_container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.banner_container_list {
+  width: 570px;
+  min-height: 268px;
+  margin: 0;
+  padding: 0;
+  background-color: #FF7799;
+  list-style: none;
+}
+
+.slaider_container {
+  display: flex;
+}
+
+.guevara {
+  margin-bottom: 80px;
+}
+
+.guevara_container {
+  display: flex;
+  gap: 30px;
+}
+
+.guevara_list {
+  width: 270px;
+  min-height: 281px;
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC;
+  list-style: none;
+}
+
+.ceo {
+  position: relative;
+  width: 1170px;
+  min-height: 480px;
+  margin-bottom: 80px;
+  background-image: url("../images/jpg/Сео.jpg");
+  background-repeat: no-repeat;
+}
+
+.ceo_container {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+
+.news_containe {
+  display: flex;
+}
+
+.news_container_text {
+  width: 570px;
+  min-height: 224px;
+}
