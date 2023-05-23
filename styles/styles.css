@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Inte";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/inter-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "Inte";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   src: url("fonts/inter-700.woff2") format("woff2");
@@ -15,28 +15,28 @@
 }
 
 @font-face {
-  font-family: "Inte";
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   src: url("fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
 html {
   height: 100%;
-  background: #F2F2F2;
+  background: #FEAFC3;
 }
 
 body {
   display: flex;
-  width:  1366px;
+  width: 1370px;
   min-height: 100%;
   margin: 0 auto;
   flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Inte", sans-serif;
+  font-family: "Inter", sans-serif;
   color:  #2D3440;
   background: #FEAFC3;
 }
@@ -64,18 +64,80 @@ body {
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   list-style: none;
 }
 
 .logo_link {
   margin: 0;
+  margin-right: 32px;
   padding: 0;
 }
 
-.navigation-link {
-  margin: 0;
-  padding: 0;
+.navigation_catalog_itam {
+  margin-right: 6px;
+}
+
+.navigation_catalog {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 22px;
+  margin-right: 32px;
+  vertical-align: middle;
+  background-image: url("../images/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation_delivery {
+  margin-right: 32px;
+  margin-left: 54px;
+}
+
+.navigation_campaign {
+  margin-right: 180px;
+}
+
+.navigation_link_tel{
+  margin-right: 16px;
+  Font-size: 16px;
+  Line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
+  color: #2D3440;
+}
+
+.navigation_button_next {
+  display: block;
+  margin-left: 86px;
+  width: 88px;
+  height: 32px;
+  background-color: rgba(252, 252, 252, 0.3);
+  background-image: url("../images/svg/log-in.svg");
+  background-repeat: no-repeat;
+  background-position: 16px;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.navigation_search {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 15px;
+  background-color: rgba(252, 252, 252, 0.3);
+  background-image: url("../images/svg/union.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.navigation_link {
+  Font-size: 16px;
+  Line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .slaider {
