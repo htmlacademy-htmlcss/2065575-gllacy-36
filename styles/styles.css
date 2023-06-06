@@ -63,16 +63,20 @@ body {
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-top: 24px;
 }
 
 .navigation_list {
   display: flex;
   flex-wrap: wrap;
   width: 422px;
-  margin: auto 0;
+  margin: 0;
+  margin-right: 164px;
   padding: 0;
   justify-content: center;
   list-style: none;
+  align-items: center;
 }
 
 .logo_link {
@@ -87,13 +91,9 @@ body {
 }
 
 .navigation_catalog {
-  display: inline-block;
-  position: absolute;
+  display: block;
   width: 16px;
   height: 16px;
-  top: 22px;
-  margin-right: 32px;
-  vertical-align: middle;
   background-image: url("../images/svg/arrow-down.svg");
   background-repeat: no-repeat;
 }
@@ -106,27 +106,26 @@ body {
 .navigation_list_button {
   display: flex;
   flex-wrap: wrap;
-  width: 590px;
-  margin: auto 0;
+  width: 431px;
   padding: 0;
+  margin: 0;
   justify-content: center;
   list-style: none;
+  align-items: center;
 }
 
 .navigation_link_tel{
-  margin: auto 0;
   margin-right: 16px;
   Font-size: 16px;
   Line-height: 20px;
   font-weight: 700;
-  vertical-align: middle;
   text-decoration: none;
   color: #2D3440;
 }
 
 .navigation_button_next {
   display: block;
-  margin-left: 86px;
+  margin-left: 16px;
   width: 88px;
   height: 30px;
   padding-left: 25px;
@@ -143,7 +142,7 @@ body {
 
 .navigation_button_product {
   display: block;
-  margin-left: 10px;
+  margin-left: 16px;
   width: 116px;
   height: 30px;
   padding-left: 25px;
@@ -158,11 +157,9 @@ body {
   border-style: none;
 }
 
-.navigation_search {
-  position: absolute;
+.navigation_search_itam {
   width: 32px;
   height: 32px;
-  top: 15px;
   background-color: rgba(252, 252, 252, 0.3);
   background-image: url("../images/svg/union.svg");
   background-repeat: no-repeat;
@@ -216,8 +213,26 @@ body {
 .slaider_list {
   display: flex;
   margin: 0;
+  margin-top: 21px;
   padding: 0;
   list-style: none;
+}
+
+.slaider_itam_main {
+  display: flex;
+  width: 312px;
+  height: 312px;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #FFCBD8;
+}
+
+.slaider_itam {
+  display: flex;
+  align-items: center;
+  margin-left: 74px;
+  gap: 75px;
 }
 
 .slaider_button {
@@ -232,6 +247,31 @@ body {
   border-radius: 26px;
 }
 
+.slaider_container_contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  margin-left: 70px;
+  justify-content: space-between;
+}
+
+.slaider_contacts_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slaider_radio_button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+}
+
 .banner {
   margin-bottom: 80px;
 }
@@ -240,6 +280,28 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.banner_text_tetle,
+.guevara_text_title {
+  width: 580px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.banner_text {
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440
 }
 
 .banner_container_left,
@@ -253,8 +315,15 @@ body {
 .banner_list {
   width: 317px;
   margin: 0;
+  margin-left: 36px;
+  margin-top: 36px;
   padding: 0;
   list-style: none;
+}
+
+.banner_title {
+  margin: 0;
+  padding: 0;
 }
 
 .guevara {
