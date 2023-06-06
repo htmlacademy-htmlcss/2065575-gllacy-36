@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header class="page_header">
+      <nav class="navigation">
+        <a class="logo_link" href="#">
+          <img src="images/svg/Лого.svg" height="56" width="137" alt="Логотип">
+        </a>
+        <ul class="navigation_list">
+          <li>
+            <a class="navigation-link" href="#">Каталог</a>
+          </li>
+          <li>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a class="navigation-link" href="#">О компании</a>
+          </li>
+          <li>
+            <a class="navigation-link" href="tel:+78005558628">Тел.: +7 (800) 555-86-28</a>
+          </li>
+          <li>
+            <button type="submit">Вход</button>
+          </li>
+          <li>
+            <button type="button">2 товара</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page_main">
+      <h1 class="visually-hidden">Страница Каталог товара</h1>
+      <div class="breadcrumbs_container">
+        <ul class="breadcrumbs_list">
+          <li>
+            <a class="breadcrumbs_link" href="">Главная</a>
+          </li>
+          <li>
+            <a class="breadcrumbs_link" href="">Каталог</a>
+          </li>
+          <li>
+            <a class="breadcrumbs_link" href="">Сливочное мороженое</a>
+          </li>
+        </ul>
+        <h2>Сливочное мороженое</h2>
+      </div>
+      <section class="catalog_forma">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
+          <select class="select-catalog" aria-label="Сортировка">
+            <option value="cheap">по популярности</option>
+            <option value="popular"></option>
+            <option value="exspensive"></option>
+          </select>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+            <label class="catalog-filter-label">
+              <input class="range-input" type="text" name="min">
+              <input class="range-input-right" type="text" name="max">
+            </label>
+            <button class="range-toggle toggle-min">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <label class="control-radio">
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products">
+              <span class="control-label-radio">0%</span>
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products" checked>
+              <span class="control-label-radio">до 10% </span>
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products">
+              <span class="control-label-radio">до 30% </span>
+              <input class="control-input-radio" type="radio" name="product-group" value="care-products">
+              <span class="control-label-radio">выше 30% </span>
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Наполнители:</legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Swimming pool" checked>
+              <span class="control-label">шоколадные</span>
+              <input class="control-input" type="checkbox" name="Parking space" checked>
+              <span class="control-label">сахарные посыпки</span>
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <span class="control-label">фрукты</span>
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <span class="control-label">сиропы</span>
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              <span class="control-label">джемы</span>
+            </label>
+          </fieldset>
+          <button class="button-apply" type="submit">Применить</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товара</h2>
+        <ul class="catalog_list">
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото.png" width="168" height="168" alt="Мороженный рожок">
+            <h3>Малинка</h3>
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <p>310 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото_1.png" width="168" height="168" alt="Мороженный Фисташковое">
+            <h3>Фисташка</h3>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <p>340 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото_2.png" width="168" height="168" alt="Мороженный Черничное">
+            <h3>Черника</h3>
+            <p>Крем-брюле с черничным джемом</p>
+            <p></p>
+            <span>330 ₽/кг</span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/Фото_3.png" width="168" height="168" alt="Мороженный со вкусом живачки">
+            <h3>Бабл-гам</h3>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <p>320 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/ежевика.png" width="168" height="168" alt="Мороженный Ежевика">
+            <h3>Ежевика</h3>
+            <p>Сливочное мороженое с ежевичным джемом</p>
+            <p>330 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/банан.png" width="168" height="168" alt="Мороженный банановое">
+            <h3>Банан</h3>
+            <p>Сливочный пломбир с банановым вкусом</p>
+            <p>340 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/шоколадку.png" width="168" height="168" alt="Мороженный шеколадное">
+            <h3>Шоколадка</h3>
+            <p>Классический шоколадный пломбир</p>
+            <p>270 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/клубничка.png" width="168" height="168" alt="Мороженный клубничное">
+            <h3>Клубничка</h3>
+            <p>Сливочный пломбир с клубничным вкусом</p>
+            <p>300 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/лимон.png" width="168" height="168" alt="Мороженный лимонное">
+            <h3>Лимон</h3>
+            <p>Освежающий лимонный сорбет</p>
+            <p>310 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/ментол.png" width="168" height="168" alt="Мороженный ментоловое">
+            <h3>Ментол</h3>
+            <p>Сливочный пломбир с ментоловым сиропом</p>
+            <p>320 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/орешек.png" width="168" height="168" alt="Мороженный орешковое">
+            <h3>Орешек</h3>
+            <p>Фисташковый пломбир с шоколадным сиропом</p>
+            <p>360 ₽/кг</p>
+            <span></span>
+          </li>
+          <li class="catalog_itam">
+            <img src="images/jpg/Крем-брюле.png" width="168" height="168" alt="Мороженный Крем-брюле">
+            <h3>Крем-брюле</h3>
+            <p>Классическое крем-брюле </p>
+            <p>280 ₽/кг</p>
+            <span></span>
+          </li>
+        </ul>
+        <div class="pagination_container">
+          <button type="button">Показать еще</button>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-button-gray" href="#"><span></span></a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-gray" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-blue" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-blue" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-blue" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-white" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-button-gray" href="#"><span></span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page_footer">
+      <ul class="social_list">
+        <li>
+          <a href="https://t.me/htmlacademy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+              <path fill="#FCFCFC" fill-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.4 8.9a563.2 563.2 0 0 0-7.9 3.6c0 .4.5.5 1 .7l.3.1c.6.2 1.5.5 1.9.5.4 0 .8-.2 1.3-.5a123.2 123.2 0 0 1 5.3-3.3v.2a34 34 0 0 1-3.5 3.5c-.6.5-1 1 0 1.6l1.3.9a88.8 88.8 0 0 0 1.8 1.2c.5.4 1 .7 1.5.6.3 0 .6-.3.8-1.2a143 143 0 0 0 1.3-9.1l-.1-.3a.8.8 0 0 0-.5-.2c-.4 0-1.1.3-4.5 1.7Z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://vk.com/htmlacademy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+              <path fill="#FCFCFC" fill-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.4 3h-.7s-1.6 0-3-1.2C7.4 12.4 6 9.6 6 9.6v-.2l.4-.1h2l.1.2.7 1.2c.7 1 1 1.3 1.3 1.2.3-.2.2-1.5.2-1.5s0-.5-.2-.7c-.1-.2-.4-.3-.5-.3 0 0 0-.2.3-.3l1.5-.1h.8c.5.2.5.5.4 1.1V11c0 .4 0 .8.2 1 .2 0 .5 0 1.3-1.3l.7-1.2.1-.2h2.1l.6.1c0 .3-.2.8-1 1.6-.7.9-1 1.2-1 1.4 0 .2.3.4.7.7l1.2 1.2c.4.6-.4.7-.4.7h-1.7l-.7-.2a4 4 0 0 1-.7-.6c-.4-.4-.7-.7-1-.6-.4.1-.4 1-.4 1v.2l-.4.2Z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+              <path fill="#FCFCFC" d="m14 11.8-2.8-1.3c-.2-.1-.4 0-.4.3v2.4c0 .3.2.4.4.3l2.8-1.3c.2-.1.2-.3 0-.4ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.9c-6.1 0-6.3-.6-6.3-4.9 0-4.3.2-4.9 6.3-4.9s6.3.6 6.3 4.9c0 4.3-.2 4.9-6.3 4.9Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="footer_menu_list">
+        <li>
+          <a href="">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="">Наши документы</a>
+        </li>
+        <li>
+          <a href="">О производстве</a>
+        </li>
+        <li>
+          <a href="">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div>
+        <a href="https://htmlacademy.ru/">
+          <img src="images/jpg/logo_htmlacademy.png" width="93" height="27" alt="Лого">
+        </a>
+        <p class="footer_text">Сделано в .html academy © 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
